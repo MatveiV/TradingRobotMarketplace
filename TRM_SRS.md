@@ -319,7 +319,7 @@ flowchart TD
 
     I -->|Deploy робота| J[DeployDialog]
     I -->|Disconnect инвестора| K[POST /disconnect-investor]
-    I -->|Delete стратегии| L[DELETE /strategies/{id}]
+    I -->|Delete стратегии| L["DELETE /strategies/{id}"]
 
     J --> M[Pipeline: upload → launch]
     K --> N[Терминал остановлен]
@@ -522,6 +522,7 @@ C4Context
     Rel(api, mt5, "subprocess запуск")
 
     UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
+    UpdateElementStyle("Relationship", $lineColor="#000000", $lineThickness="3")
 ```
 
 ### 6.2 Технологический стек
