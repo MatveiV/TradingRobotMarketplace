@@ -495,6 +495,7 @@ sequenceDiagram
 ### 6.1 Диаграмма контейнеров C4
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'background': '#FFF8E7'}}}%%
 C4Context
     title Контейнерная архитектура Copy Trading Platform (v4.0)
 
